@@ -33,7 +33,7 @@ h1{
 }
 
 
-#theme-switch{
+#theme-switch {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -42,29 +42,28 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 60px;
-    right: 200px;
     background: transparent;
     cursor: pointer;
 }
 
-#theme-switch svg{
-    fill:var(--text-color);
-
+#theme-switch svg {
+    fill: var(--text-color);
+    width: 24px;
+    height: 24px;
 }
-#theme-switch svg:last-child{
+
+#theme-switch svg:last-child {
     display: none;
 }
 
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:first-child {
     display: none;
 }
 
-
-.darkmode #theme-switch svg:last-child{
+.darkmode #theme-switch svg:last-child {
     display: block;
-} 
+}
+
 
 .circle{
     height: 24px;

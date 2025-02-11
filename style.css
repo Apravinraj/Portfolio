@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --base-color: white;
+    --base-varient: #9370DB;
+    --text-color: #111528;
+    --base-background: #F0F8FF;
+    --sec-text: black;
+    
+}
+.darkmode
+{
+    --base-color:#ffffff;
+    --base-varient:#7A1CAC;
+    --text-color:rgb(255, 255, 255);
+    --base-background:#070F2B;
+    --sec-text: white;
+}
+
+
+body{
+    background-color: var(--base-background);
+    font-family: titillium web;
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#theme-switch svg{
+    fill:var(--text-color);
+
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+} 
+
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Prevent interaction issues */
+    z-index: 9999;
+}
+
+header > div > div{
+    margin-top: 50px;
+
+}
+
+header a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+nav{
+    gap: 20px;
+}
+
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--base-varient);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.btn-1 {
+    position: relative;
+    background-color: var(--base-color);
+    color: var(--base-varient);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-color: var(--base-varient);
+    border-radius: 10px;
+    border-width: 7px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+    width: 300px;
+
+  }
+  
+  .btn-1::before {
+    content: "";
+    position: absolute;
+    background-color: var(--base-varient);
+    height: 200px;
+    width: 400px;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+    border-radius: 5px;
+    z-index: -1;  
+  }
+  
+  .btn-1:hover {
+    color: var(--base-color); 
+  }
+  
+  .btn-1:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+
+
+
+.project-wrapper > div >div img{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.project-wrapper > div >div {
+    text-align: center;
+}
+
+
+.project-head{
+    margin: 30px 0px;
+}
+.base-color{
+    background-color: blue;
+}
+
+.card{
+    background-color: var(--base-varient);
+    color: var(--sec-text);
+    
+}
+
+
+
+form input, 
+  form textarea {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: var(--base-varient);
+    color: var(--sec-text);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  form input::placeholder, 
+  form textarea::placeholder {
+    color: var(--text-color);
+  }
+  
+  textarea {
+    height: 200px;
+    resize: none;
+  }
+
+
+
+form .send-btn {
+    background: var(--base-varient);
+    color: var(--sec-text);
+    box-shadow: 4px 4px var(--base-background);
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 42px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    margin-top: 5px;
+  }
+  
+  form .send-btn:hover {
+    background: var(--sec-text);
+    color: var(--base-varient);
+    box-shadow: 4px 4px var(--base-varient);
+  }
+
+
+  .text-hl{
+color: var(--base-varient);
+  }
+
+  header,section{
+    color: var(--text-color);
+    
+}
+
+
+section{
+    margin: 100px 0px;
+}
+
+
+
+
+
+
+
+/* nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: var(--base-varient);
+    font-weight: bold;
+    border-bottom: 3px solid #007bff;
+} */
+
+/* scrolling animation */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

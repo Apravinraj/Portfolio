@@ -172,6 +172,12 @@ nav a:hover::after {
     left: -30px;
   }
 
+  .profile-img{
+    width: 80%;
+
+  }
+
+
 
 
 .project-wrapper > div >div img{
@@ -279,9 +285,9 @@ nav a.active {
     color: var(--base-varient);
     font-weight: bold;
     border-bottom: 3px solid #007bff;
-} */
+} */ 
 
-/* scrolling animation */
+/* scrolling animation
 
 .hidden {
     opacity: 0;

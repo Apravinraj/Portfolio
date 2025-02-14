@@ -11,8 +11,9 @@
     <script type="text/javascript" src="index.js" defer></script></script>
     <title>Portfolio</title>
 </head>
-<body class="darkmode">
+<body class="darkmode container">
 
+    <!-- <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -29,12 +30,17 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
+    <div class="circle"></div> -->
     <header>
-        <div class="container hidden">
-            <div class="d-flex align-items-center justify-content-between">
+        <div class="hidden">
+            <div class="">
                 <h1 class="text-color">PRAVIN RAJ</h1>
+            </div>
+            <div class="text-start">
+                <button class="navbar-toggler d-md-none" type="button" onclick="toggleMenu()">
+                    ☰
+                </button>
+            </div>
                 <nav class="d-flex align-items-center gap-4">
                     <a href="#home">HOME</a>
                     <a href="#about">ABOUT</a>
@@ -56,9 +62,9 @@
     
 
 <section id="home">
-    <div  class="container hidden col-sm-12 mt-5 d-flex align-items-center justify-content-between">
+    <div  class="">
         
-        <div class="row col-md-6">
+        <div class="">
             <h1>HI THERE</h1>
             
             <h1>I'm a <span class="text-hl auto-type">Programmer</span></h1>
@@ -66,7 +72,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio corporis ut beatae voluptates temporibus velit sapiente odio commodi inventore nulla quam dicta reprehenderit debitis, cumque ipsa dolorum ratione esse earum!</p>
             <button type="button" class="btn-1">About Me</button>
         </div>
-            <div class="col-md-4">
+            <div class="">
                 <img src="assets/home/home.png" alt="Profile Picture" class="profile-img">
 
             </div>
@@ -77,8 +83,8 @@
 </section>
 
 <section id="about">
-        <div class="container hidden col-md-12 d-flex text-center align-items-center justify-content-between">
-           <div class="col-md-6">
+        <div class="">
+           <div class="">
             
                 <h1 class="text-center">About Me</h1>
 
@@ -88,24 +94,24 @@
 
         
 
-            <div class="col-md-6">
+            <div class="">
                 <img src="assets/about/about.png" alt="">
             </div>
-    </div>
+        </div>
 </section>
 
 
 <section id="project">
-    <div  class="container hidden">
+    <div  class="hidden">
         <div class="project-head text-center m-6">
             <h1 class="">PROJECTS</h1>
         </div>
         
         <div class="project-wrapper">
-            <div class="row mb-5">
-                <div class=" d-flex gap-3 col-sm-12 col-lg-12">
-                    <a href="" target="_blank" class="card d-flex flex-column h-100 text-decoration-none">
-                        <div class="p-5 rounded flex-grow-1 d-fleX flex-column">
+            <div class="">
+                <div class="">
+                    <a href="" target="_blank" class="card mb-5 text-decoration-none">
+                        <div class="p-5 rounded">
                             <img class="mb-4 mx-auto d-block" src="assets/project/url.png" alt="">
                             <h3 class="mb-4">URL TABBER</h3>
                             <p class="mb-4">A Chrome extension to easily save tabs in Google local storage.</p>
@@ -113,24 +119,24 @@
                     </a>
                     
 
-                    <a href="" target="_blank" class="card d-flex flex-column h-100 text-decoration-none">
-                        <div class=" p-5 rounded flex-grow-1 d-flex flex-column">
+                    <a href="" target="_blank" class="card mb-5 text-decoration-none">
+                        <div class=" p-5 rounded">
                             <img class="mb-4 mx-auto d-block" src="assets/project/cart.png" alt="">
                             <h3 class="mb-4">SHOPPING CART BOT</h3>
                             <p class="mb-4">A shopping cart website allows users to create and manage a grocery list.</p>
                         </div>
                     </a>
 
-                    <a href="" target="_blank" class="card d-flex flex-column h-100 text-decoration-none">
-                        <div class=" p-5 rounded flex-grow-1 d-flex flex-column">
+                    <a href="" target="_blank" class="card mb-5 text-decoration-none">
+                        <div class=" p-5 rounded ">
                             <img class="mb-4 mx-auto d-block" src="assets/project/logo blood.jpg" alt="">
                             <h3 class="mb-4">BLOOD DONATION NOTIFICATION SYSTEM</h3>
                             <p class="mb-4">A system that alerts registered donors about urgent blood donation needs.</p>
                         </div>
                     </a>
 
-                    <a href="" target="_blank" class="card d-flex flex-column h-100 text-decoration-none">
-                        <div class=" p-5 rounded flex-grow-1 d-flex flex-column">
+                    <a href="" target="_blank" class="card  text-decoration-none">
+                        <div class=" p-5 rounded">
                             <img class="mb-4 mx-auto d-block" src="assets/project/e-learn.jpeg" alt="">
                             <h3 class="mb-4">E-LEARNING WEBSITE</h3>
                             <p class="mb-4">An online learning platform with courses and tutorials.</p>
@@ -145,7 +151,7 @@
 </section>
 
 <section id="contact">
-    <div class="container hidden">
+    <div class="hidden">
         <div class="contact-wrapper">
             <div class="contact-header text-center mb-5 d-flex flex-column">
                 <h1>Get In Touch</h3>

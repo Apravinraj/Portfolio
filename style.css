@@ -121,6 +121,17 @@ nav a:hover::after {
     left: 0;
 }
 
+.nav-menu {
+    display: none;
+}
+.nav-menu.show {
+    display: block;
+}
+@media (min-width: 768px) {
+    .nav-menu {
+        display: flex !important;
+    }
+}
 
 .btn-1 {
     position: relative;

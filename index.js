@@ -115,3 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elementsToReveal.forEach((el) => observer.observe(el));
 });
+
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+}
